@@ -12,8 +12,22 @@ public class UseQueue {
 		 * 
 		 */
 		Queue<String> queue = new LinkedList<>();
-		queue.poll();
+			queue.add("Tom");
+			queue.add("Hanks");
+			queue.add("Brad");
+			queue.add("Cooper");
 
+			System.out.println(queue.peek());
+
+			System.out.println(queue);
+
+			System.out.println(queue.poll());
+
+			System.out.println(queue);
+
+			System.out.println(queue.remove("Hanks"));
+
+			System.out.println(queue);
 	}
 
 }

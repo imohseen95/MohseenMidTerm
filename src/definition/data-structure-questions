@@ -1,34 +1,109 @@
 Please answer the below Data Structure Questions:
 
 why do we need data structure?
-A.
-
+A.Data Structure helps in organizing data, storing data and managing data so that we can access and modify it efficiently.
 
 What are the various operations that can be performed on different Data Structures?
+A-Insertion: Add a new data item in the given collection of data items.
+  Deletion: Delete an existing data item from the given collection of data items.
+  Traversal: Access each data item exactly once so that it can be processed.
+  Searching: Find out the location of the data item if it exists in the given collection of data items.
+  Sorting: Arranging the data items in some order i.e. in ascending or descending order
+            in case of numerical data and in dictionary order in case of alphanumeric data.
+
+
 List out the areas in which data structures are applied extensively?
+A-Data structures are used in any program or software.
+  They are used in the areas of
+  Compiler Design
+  Operating System
+  DBMS
+  Graphics
+  Simulation
+  Numerical Analysis
+  Artificial Intelligence
+
 what is an Array?
+A-An array is a container object that holds a fixed number of values of a single type.
+
 what is the difference between the Array and ArrayList?
+A-  Array is a fixed-length data structure while ArrayList is a variable-length Collection class.
+    You can not change the length of Array once created in Java but
+    ArrayList re-size itself when gets full depending upon the capacity and load factor.
+
+
 what is LinkedList?
+A-  A linked list is a common data structure made of a chain of nodes in which
+    each node contains a value and a pointer to the next node in the chain.
+
 How is an Array different from Linked List?
+A-  An array is a single contiguous block of memory.
+    A linked list is a series of node objects linked together by pointers or references
+
 what is queue?
+A-A queue is a linear data structure or a collection in Java that stores elements in a FIFO (First In, First Out) order.
+
 what is stack?
+A-The Stack class represents a last-in-first-out (LIFO) stack of objects
+
 what is FIFO and LIFO?
+A-  first in first out -example queue
+    last in first out -example stack
+
 what is the order of complexity?
+A-
+
 what is the best case to search an element from an array?
+
+
 what is the worst case to search an element from an array?
+
+
 what is tree in data structure?
+A-  A tree is non-linear and a hierarchical data structure consisting of a collection of nodes
+    such that each node of the tree stores a value
+
 what is graph in data structure?
+A-  A Graph is a non-linear data structure consisting of nodes and edges.
+    The nodes are sometimes also referred to as vertices and the edges are lines or arcs that connect any two nodes in the graph.
+
 what is the difference between the HashTable and HashMap?
+A-Hashtable is synchronized. It is thread-safe and can be shared with many threads.
+     HashMap is non synchronized. It is not-thread safe and can't be shared between many threads without proper synchronization code.
+
 What are the major data structures used in the following areas : RDBMS, Network data model and Hierarchical data model.
+A- Array ,gtraph, trees
+
 How HashMap works in java?
+A-
+
 What is ArrayIndexOutOfBoundsException in java? When it occurs?
+A-ArrayIndexOutOfBoundsException is thrown to indicate that we are trying to access array element with an illegal index.
+This exception is thrown when the index is either negative or greater than or equal to the size of the array.
+
 What are the different ways of copying an array into another array?
+A-
+
 What is difference between an array and a linked list?
+A- An array is a single contiguous block of memory.
+      A linked list is a series of node objects linked together by pointers or references
+
+
 What is DFS and BFS?
+
+
 What is Recursion?
+
+
 What are linear and non linear data Structures?
+
+
 What is Big-(O)-notation?
+
+
 Outlined different kind of sorting algorithm with time complexity?
+
+
 
 Draw a table with time complexity in which it will summarize all the data structure feature's advantages and disadvantages.
   a)In terms of Accessing element.

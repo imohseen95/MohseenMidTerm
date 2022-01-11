@@ -2,30 +2,55 @@ This file contains SQL questions.
 Please read the questions and answer.
 
 What is Database?
-A.
+A.A database in SQL Server is made up of a collection of tables that stores a specific set of structured data
 
 What is DBMS?
+A-  Database Management Systems (DBMS) are software systems used to store, retrieve,
+    and run queries on data. A DBMS serves as an interface between an end-user and a database,
+    allowing users to create, read, update, and delete data in the database.
+
 What is the difference between SQL and MySQL?
+A-  SQL extends for Structured Query Language.
+    SQL is a standard language that enables the user to design and manage databases.
+    On the other hand, MySQL is a relational database management system that allows a user to store and retrieve data from the database.
+    MySQL uses SQL to perform specific operations on the database.
+
 What is RDBMS? How is it different from DBMS?
+A-  In DBMS, the data is stored as a file, while in RDBMS, the information is stored in tables.
+    DBMS can only be used by one single user, whereas multiple users can use RDMBS.
+    In DBMS, there can be redundancy of data. Meaning data can be repeated when we are using DBMS.
+    Whereas, in RDBMS, due to the indexing present, we cannot have redundant data.
+
 What are Tables and Fields?
+A-
+
 What is SQL?
+A-SQL is Structured Query Language, which is a computer language for storing, manipulating and retrieving data stored in a relational database.
+
 What are Constraints in SQL?
+A-  Constraints in SQL Server are predefined rules and restrictions that are enforced in a single column or multiple columns,
+    regarding the values allowed in the columns, to maintain the integrity, accuracy, and reliability of that column's data
+
 What is a Primary Key?
+A-A primary key is a special relational database table column (or combination of columns) designated to uniquely identify each table record.
+
 What is a Foreign Key?
+A-A foreign key is a key used to link two tables together. This is sometimes also called as a referencing key.
+
 What is Normalization?
+
+
 What is Denormalization?
 
+
 You have 2 tables given below.
-
 Order Table:
-
 OrderID	 CustomerID	  OrderDate
 20508	    1	      2014-09-10
 30407	    2	      2016-09-19
 40250	    10	      2020-03-20
 
 Customer Table:
-
 CustomerID	   CustomerName	    CustomerPhone	     Country
 1              John Dave	    1-718-203-9087	     Australia
 2	           Brian Gary	    1-646-789-3489	     USA
@@ -33,14 +58,31 @@ CustomerID	   CustomerName	    CustomerPhone	     Country
 
 Please do the following on above Order table and Customer table:
 
-Inner Join:
-Left Join:
-Right Join:
-Full Join:
+Inner Join:SELECT Orders.OrderID, Customer.CustomerName
+           FROM Orders
+           INNER JOIN Customer ON Orders.CustomerID = Customer.CustomerID;
+
+Left Join:SELECT Orders.OrderID, Customer.CustomerName
+          FROM Order
+          LEFT JOIN Customer ON Customer.CustomerID = Order.CustomerID
+          ORDER BY Customer.CustomerName;
+
+Right Join:SELECT Orders.OrderID, Customer.CustomerName
+           FROM Orders
+           RIGHT JOIN Customer ON Orders.CustomerID = Customer.CustomerID
+           ORDER BY Orders.OrderID;
+
+Full Join:SELECT Orders.OrderID, Customers.CustomerName
+          FROM Order
+          FULL OUTER JOIN Customer ON Customers.CustomerID = Orders.CustomerID
+          ORDER BY Customers.CustomerName;
 
 On Customer Table, please Insert one row.
+    INSERT INTO Customer (CustomerID, ContactName, CustomerPhone, Country)
+    VALUES ('4', 'Peter', '1-212-342-5852', Italy');
 
 On Order Table, please Update one row.
+UPDATE Order SET CustomerID = '14' WHERE OrderID = 40250;
 
 
 

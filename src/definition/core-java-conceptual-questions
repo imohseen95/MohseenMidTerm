@@ -138,7 +138,7 @@ A.The super keyword in Java is a reference variable which is used to refer immed
     Using super we can call default or parameterized keyword.
 
 What is JVM stand for ?
-A-Java aVirtual Machine
+A-Java Virtual Machine
 
 Is JVM platform independent?
 A-The JVM is not platform independent.
@@ -163,38 +163,105 @@ A-  JRE is an environment, in order to execute any Java program locally.
 
 What is compile time and run time?
 A-Compile time is when the program is compiled
- Runtime is when it executes
+  Runtime is when it executes
 
 What is heap?
 A-Heap is an area of memory reserved for data that is created when a program is executed
 
 How java manage it's memory?
-A-
+A-  Java objects reside in an area called the heap.
+    The heap is created when the JVM starts up and may increase or decrease in size while the application runs.
+    When the heap becomes full, garbage is collected.
+    During the garbage collection objects that are no longer used are cleared, thus making space for new objects.
 
 What is the difference between String, StringBuffer and StringBuilder?
+A- The string is a Java class that is used to create an object of type String, which is a sequence of characters.
+    StringBuffer is a Java class that is used to create String objects, which can be modified with thread safety.
+        StringBuilder is a class that is used to create string objects, which can be modified without thread safety.
+
 What is Singleton class?
+A-A Singleton class in Java allows only one instance to be created and provides
+global access to all other classes through this single object or instance.
+
 What is Serialization and Deserialization?
-when to use transient variable in java?
+A-  Serialization is a process of converting an object into a sequence of bytes which can be persisted to a disk or database or can be sent through streams.
+    The reverse process of creating object from sequence of bytes is called deserialization
+
+When to use transient variable in java?
+A-  The transient keyword in Java is used to avoid serialization.
+    If any object of a data structure is defined as a transient , then it will not be serialized.
+
 Difference between while and do..while loop?
+A-  While loop checks the condition first and then executes the statement,
+    whereas do while loop will execute the statement at least once, then the condition is checked
+
 What is Enum?
+A-  An enum type is a special data type that enables for a variable to be a set of predefined constants.
+    The variable must be equal to one of the values that have been predefined for it
+
 What is Iterator?
+A-An iterator is an object that enables a programmer to traverse a container, particularly lists
+
 Which one will take more memory, an int or Integer?
+A-int is a primitive data type and takes 32 bits(4 bytes) to store.
+    On other hand Integer is an object which takes 128 bits (16 bytes) to store its int value.
+
 Why is String Immutable in Java?
+A-The String is immutable in Java because of the security, synchronization and concurrency, caching, and class loading
+
 What is constructor chaining in Java?
+A-Constructor Chaining is the process of calling one constructor of a class from another constructor of the same class
+or another class using the current object of the class.
+
 The difference between Serial and Parallel Garbage Collector?
+A-
+
 What is JIT stands for?
+A-Just-In-Time
 Explain Java Heap space and Garbage collection?
+
+
 Can you guarantee the garbage collection process?
+
+
 What is the difference between stack and heap in Java?
+A-  The major difference between Stack memory and heap memory is that the stack is
+    used to store the order of method execution and local variables
+    while the heap memory stores the objects and it uses dynamic memory allocation and de allocation.
+
 What is reflection in java and why is it useful?
+
+
 what is multithreading in java?
+
+
 What is the use of synchronization in Java?
+
+
 What is Framework?
+
+
 What are the testing Framework available in java?
+A-Selenium, Serenity, JUnit, TestNG, Cucumber
+
 Difference between jUnit and testNG?
+A-JUnit is an open-source framework used to trigger and write tests.
+TestNG is a Java-based framework that is an upgraded option for running tests.
+JUnit does not support to run parallel tests. TestNG can run parallel tests
+
 What are the dependencies for this project?
+A-  testNg
+    gson
+    mysql
+    mongodb
+
 what is dependency injection in java?
+A-Dependency injection (DI) is the concept in which objects get other required objects from outside
+
 What is static binding and dynamic binding?
+A-  Static binding-It takes place at compile time which is also referred to as early binding
+    It takes place at runtime which is also referred to as late binding.
+
 
 
 

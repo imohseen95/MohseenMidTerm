@@ -35,14 +35,26 @@ public class Numbers {
         printValue(selectionSortNumbers);
 		int n = num.length;
 		randomize (num, n);
+
 		//Insertion Sort
-		algo.insertionSort(num);
-		long insertionSortExecutionTime = algo.executionTime;
+		Sort algo2 = new Sort();
+		algo2.insertionSort(num);
+		long insertionSortExecutionTime = algo2.executionTime;
 		System.out.println("Total Execution Time of " + num.length + " numbers in Insertion Sort take: " + insertionSortExecutionTime + " milli sec");
 		connectToSqlDB.insertDataFromArrayToSqlTable(num, "insertion_sort", "SortingNumbers");
 		List<String> insertionSortNumbers = connectToSqlDB.readDataBase("insertion_sort", "SortingNumbers");
 		printValue(insertionSortNumbers);
 		//By following above, Continue for rest of the Sorting Algorithm....
+
+		Sort algo3 = new Sort();
+		algo3.bubbleSort(num);
+		long bubbleSortExecutionTime = algo3.executionTime;
+		System.out.println("Total Execution Time of "+ num.length + " numbers in Bubble Sort take: " + bubbleSortExecutionTime + " milli sec");
+		connectToSqlDB.insertDataFromArrayToSqlTable(num, "bubble_sort", "SortingNumbers");
+		List<String> bubbleSortNumbers = connectToSqlDB.readDataBase("bubble_sort", "SortingNumbers");
+		printValue(bubbleSortNumbers);
+
+
 
 
 
